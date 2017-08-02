@@ -6,7 +6,7 @@ from sys import argv
 script, ref, subs, outfile = argv
 out = open(outfile, 'wb')
 seq_string = []
-user_descrip="Please describe what you are doing: "
+user_descrip=raw_input("Give the file a description: ")
 with open(ref, "r") as infile:
 	for k, line in enumerate(infile):
         
